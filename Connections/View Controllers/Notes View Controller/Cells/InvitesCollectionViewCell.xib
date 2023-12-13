@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="InvitesCollectionViewCell" customModule="Aisle_Assesment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="317"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="317"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAU-aa-MuG" userLabel="Notes View">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="317"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6aN-Sy-CIp">
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="317"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to review 50+ notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-La-aVD">
+                                <rect key="frame" x="20" y="279" width="316" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pratik, 21" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30M-QY-2vQ">
+                                <rect key="frame" x="20" y="241" width="316" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6aN-Sy-CIp" firstAttribute="bottom" secondItem="YAH-La-aVD" secondAttribute="bottom" constant="20" id="2xs-Ux-cou"/>
+                            <constraint firstItem="YAH-La-aVD" firstAttribute="leading" secondItem="6aN-Sy-CIp" secondAttribute="leading" constant="20" id="CTw-od-Xff"/>
+                            <constraint firstItem="6aN-Sy-CIp" firstAttribute="trailing" secondItem="YAH-La-aVD" secondAttribute="trailing" constant="20" id="FTd-By-q3J"/>
+                            <constraint firstAttribute="bottom" secondItem="6aN-Sy-CIp" secondAttribute="bottom" id="M9o-CD-y0w"/>
+                            <constraint firstItem="6aN-Sy-CIp" firstAttribute="leading" secondItem="MAU-aa-MuG" secondAttribute="leading" id="Qbw-Cd-9VQ"/>
+                            <constraint firstItem="YAH-La-aVD" firstAttribute="top" secondItem="30M-QY-2vQ" secondAttribute="bottom" constant="8" symbolic="YES" id="bBu-pn-P11"/>
+                            <constraint firstItem="30M-QY-2vQ" firstAttribute="leading" secondItem="MAU-aa-MuG" secondAttribute="leading" constant="20" id="bvP-1M-A97"/>
+                            <constraint firstItem="6aN-Sy-CIp" firstAttribute="top" secondItem="MAU-aa-MuG" secondAttribute="top" id="eyJ-rC-A3R"/>
+                            <constraint firstAttribute="trailing" secondItem="6aN-Sy-CIp" secondAttribute="trailing" id="ja9-ah-Qz2"/>
+                            <constraint firstAttribute="trailing" secondItem="30M-QY-2vQ" secondAttribute="trailing" constant="20" id="jdS-cR-xQY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="MAU-aa-MuG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XnS-zo-QhH"/>
+                <constraint firstItem="MAU-aa-MuG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fBw-jk-Xbk"/>
+                <constraint firstAttribute="bottom" secondItem="MAU-aa-MuG" secondAttribute="bottom" id="irx-fY-Xo6"/>
+                <constraint firstAttribute="trailing" secondItem="MAU-aa-MuG" secondAttribute="trailing" id="q6i-4t-u4R"/>
+            </constraints>
+            <size key="customSize" width="356" height="317"/>
+            <connections>
+                <outlet property="userImage" destination="6aN-Sy-CIp" id="Ejm-bK-Swc"/>
+                <outlet property="userNameLabel" destination="30M-QY-2vQ" id="Sn9-jl-eMT"/>
+            </connections>
+            <point key="canvasLocation" x="266.15384615384613" y="115.521327014218"/>
+        </collectionViewCell>
+    </objects>
+</document>
